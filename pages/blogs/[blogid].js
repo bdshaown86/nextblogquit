@@ -1,11 +1,11 @@
 import { db } from "../../firebase"
-import { useState } from "react"
-import { useRouter } from "next/router"
+import {useState} from "react"
+import {useRouter} from "next/router"
 
 
 
 const blogpage = ({blog,user,allComments}) => {
-    const [mycomment, setMycomment] = useState("");
+    const [mycomment,setMycomment] = useState("");
     const [allCommentsBlog,setAllCommentsBlog] = useState(allComments)
     const router = useRouter();
 
