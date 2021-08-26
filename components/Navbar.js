@@ -31,13 +31,15 @@
   
 import Link from 'next/link'
 import {auth} from '../firebase'
+import styles from './navbar.module.css';
+
 export default function NavBar({user}) {
     
     return (
         <nav>
         <div className="nav-wrapper #fb8c00 orange darken-1">
-          <Link href="/"><a className="brand-logo">Blogger</a></Link>
-          <ul id="nav-mobile" className="right">
+          <Link href="/"><a className="brand-logo brand">BloggerJs</a></Link>
+          <ul id="nav-mobile" className="right navbar">
             {user?
             <>
               <li><Link href="/createblog"><a>Create Blog</a></Link></li>
