@@ -2,7 +2,7 @@ import {useState,useEffect} from "react";
 import {v4 as uuidv4} from 'uuid';
 import {storage,db,serverTimestamp } from "../firebase";
 
-const createblog = ({user}) => {
+const Createblog = ({user}) => {
  const [title,setTitle] = useState('')
  const [body,setBody] = useState('')
  const [image,setImage] = useState('')
@@ -93,4 +93,4 @@ const createblog = ({user}) => {
     )
 }
 
-export default createblog
+export default Createblog
